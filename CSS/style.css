@@ -541,10 +541,6 @@ header {
 
 @media screen and (min-width:700px) and (orientation:landscape) {
     .header-container {
-        margin: 0 auto;
-        max-width: 1200px;
-        display: flex;
-        padding: 3rem 2rem;
-        gap: 3rem;
+        flex-direction: row;
     }
 }
