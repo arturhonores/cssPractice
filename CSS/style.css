@@ -31,7 +31,7 @@ body {
 }
 
 header {
-    height: 100vh;
+    height: 100svh;
     background-image: linear-gradient(to top, var(--primary) 0%, var(--tertiary) 100%);
     display: flex;
     justify-content: center;
