@@ -5,25 +5,61 @@
 }
 
 .themeButtons {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    display: flex;
-    gap: 1rem;
+    position: relative;
 }
 
-.themeButtons__red {
-    width: 1.5rem;
-    height: 1.5rem;
+.themeButtons-container {
+    position: absolute;
+    display: flex;
+    top: 1rem;
+    left: 2rem;
+}
+
+.themeButtons__icon {
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.fa-paint-roller {
+    background-image: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #80ff00, #00ff00, #00ff80, #00ffff, #0080ff, #0000ff, #8000ff, #ff00ff, #ff0080, #ff0000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.themeButtons__dropdown {
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 0;
+    margin-left: -1rem;
+    /* overflow: hidden; */
+    transition: width 0.3s ease-in-out;
+}
+
+.themeButtons__default {
+    width: 2rem;
+    height: 2rem;
     background-color: #f77062;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 .themeButtons__blue {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     background-color: blue;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 body {
@@ -361,6 +397,24 @@ header {
     padding-left: 2rem;
     padding-right: 2rem;
 }
+
+.visible {
+    width: 8rem;
+    /* position: relative;
+    z-index: 20; */
+}
+
+/* .visible::after {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    z-index: -10;
+    background-color: white;
+    position: absolute;
+    right: -15px;
+    border-radius: 50%;
+} */
+
 
 /* mediaQueries */
 @media screen and (max-width:550px) {
